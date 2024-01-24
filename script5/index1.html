@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script 6</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body{
+            background-color: rgb(24, 24, 26);
+            
+        }
+
+        header{
+            text-align: center;
+            padding: 40px;
+            background-color: rgb(7, 7, 7);
+        }
+
+
+
+        header h1{
+            color: rgb(248, 248, 0);
+            font-size: 40px;
+        }
+
+        header h2{
+            color: yellow;
+        }
+
+        p{
+            text-align: justify;
+            line-height: 2em;
+            font-weight: 550;
+            font-size: 17px;
+            color: antiquewhite;
+            text-indent: 20px;
+        }
+        section{
+            margin: auto;
+            margin-top: 40px;
+            width: 400px;
+            background-color: rgb(6, 7, 7);
+            padding: 20px;
+           border-radius: 10px;
+        }
+        div#cor1{
+            background-color: rgb(116, 116, 116);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        div#cor2{
+            background-color: rgb(116, 116, 116);
+            padding: 10px;
+            border-radius:5px;
+            margin-bottom: 13px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>A arte da NETSCAPE</h1>
+        </header>
+        <section>
+            <div id="cor2">
+                <h2 style="text-align: center; color:rgb(0, 0, 0) ;font-size: 30px;">O JavaScript</h2>
+                <p>
+                    Tudo começou pelo querer tornar o <abbr title="Linguagem de Marcação em Hipertexto" style="text-decoration: none; color: black;">HTML</abbr> mais dinâmico lá para os anos 95. Leva esse nome de JavaScript porque nos anos 95 o nome <abbr title="Variedade de café da ilha indonésia de Java" style="text-decoration: none; color: #000;">JAVA</abbr> estava na "moda"!
+                </p>
+            </div>
+            <div id="cor1">
+                <h2 style="color: rgb(0, 0, 0); text-align: center; font-size: 30px;">
+                    Coloque o mouse aqui
+                </h2>
+                <p id="p2">
+                   Farei o uso de alguns recursos básicos do JavaScript nesta div. Respeitando as leis elementares na nomeação de variáveis.
+                   Contudo, É<STRONG> RÓGER</STRONG>!!
+                </p>
+            </div>
+        </section>
+    </main>
+    <script>
+        var p5 = document.getElementById('p2')
+        p5.addEventListener('click', Ele)
+
+        
+        function Ele(){
+            p5.innerText = 'Você fez oque muitos humanos fariam, perfeito seu comum!'
+        }
+        
+        var p3 = document.getElementById('p2')
+
+        p3.addEventListener('mouseenter', entre)
+        function entre(){
+            p3.innerText = 'Aiii, você meteu todo cursor seu tarado!'
+        }
+
+        var p4 = document.getElementById('p2')
+        p4.addEventListener('mouseout', tirou)
+
+        function tirou(){
+            p4.innerText = 'Tirou depressa safado, ksksks'
+        }
+    </script>
+</body>
+</html>
