@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script5</title>
+    <style>
+        body{
+            background-image: radial-gradient(circle, rgb(56, 56, 56), rgb(92, 91, 91));
+            height: 100vh;
+        }
+        body::-webkit-scrollbar{
+            width: 0;
+            height: 0;
+        }
+
+        p{
+            background-image: radial-gradient(circle, rgb(26, 26, 26), rgb(53, 53, 53));
+            border-radius: 50%;
+            width: 230px;
+            height: 230px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 20px;
+            transform: translate(0% , 65%);
+            padding-top:65px ;
+            margin: auto;
+            font-weight: 600;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <p id="pepeca">
+      Olá, boneca! <br>  
+      A sua existência é passageira!
+    </p>
+    <script>
+        var b = window.document.getElementById('pepeca')
+        b.addEventListener('mouseenter', entre)
+
+        var d = window.document.getElementById('pepeca')
+        d.addEventListener('mouseout', saiu)
+
+        function entre() {
+            b.innerHTML = '<br>Ela não gosta de si!'
+        }
+
+        function saiu(){
+            d.innerHTML = '<br>Olá, boneca! <br>Ele não gosta de si!'
+        }
+    </script>
+</body>
+</html>
