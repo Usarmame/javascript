@@ -91,7 +91,7 @@
 </head>
 <body>
     <div id="pat">
-        <h1>
+        <h1 id="upper">
             Soma
         </h1>
     </div>
@@ -113,6 +113,8 @@
             var nume2 = Number(nu2.value)
             var z = nume1 + nume2
             yu.innerHTML = `<strong>A soma entre ${nume1} e ${nume2} é ${z}</strong>` 
+            var b = document.getElementById('upper')
+            b.innerText = 'SOMA'
         }
     </script>
 </body>
