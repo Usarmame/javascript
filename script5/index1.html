@@ -8,19 +8,23 @@
         *{
             margin: 0;
             padding: 0;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         body{
-            background-color: gray;
+            background-color: rgb(0, 0, 0);
             height: 100vh;
-            /*background-image: url('img/background002.jpg');*/
-        }
+            background-image: url('img/pexels-magda-ehlers-2660262.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }   
 
         header{
             text-align: center;
             padding: 40px;
-            background-color: rgb(7, 7, 7);
+            background-color: rgba(255, 255, 255, 0);
         }
 
 
@@ -30,8 +34,11 @@
             font-size: 40px;
         }
 
-        header h2{
-            color: yellow;
+        
+
+        section h2#sol{
+            text-decoration: underline;
+            color: rgb(232, 233, 233);
         }
 
         p{
@@ -39,20 +46,21 @@
             line-height: 2em;
             font-weight: 550;
             font-size: 17px;
-            color: antiquewhite;
+            color: rgb(0, 0, 0);
             text-indent: 20px;
         }
+
         section{
             margin: auto;
             margin-top: 40px;
             width: 400px;
-            background-color: rgb(6, 7, 7);
+            background-color: rgba(255, 255, 255, 0.192);
             padding: 20px;
            border-radius: 10px;
         }
 
         div{
-            background-color: gray;
+            background-color: rgba(255, 255, 255, 0);
         }
 
         div#cor1{
@@ -66,18 +74,45 @@
             border-radius:5px;
             margin-bottom: 13px;
         }
+
+        @media screen and (min-width:768px) {
+            section{
+                width: 768px;
+                height: 300px;
+            }
+
+            h1#px{
+                color: aqua;
+            }
+
+            body{
+                background-image: url('img/pexels-pixabay-256150.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            
+            *{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 29px;
+            }
+
+           section h2#sol{
+                text-decoration: none;
+            }
+        }
     </style>
 </head>
 <body>
     <main>
         <header>
-            <h1>A arte da NETSCAPE</h1>
+            <h1 id="px">A arte da NETSCAPE</h1>
         </header>
         <section>
             <div id="cor2">
-                <h2 style="text-align: center; color:rgb(0, 0, 0) ;font-size: 30px;">O JavaScript</h2>
+                <h2 style="text-align: center; color:rgb(0, 0, 0) ;font-size: 30px;" id="sol">O JavaScript</h2>
                 <p>
-                    Tudo começou pelo querer tornar o <abbr title="Linguagem de Marcação em Hipertexto" style="text-decoration: none; color: black;">HTML</abbr> mais dinâmico lá para os anos 95. Leva esse nome de JavaScript porque nos anos 95 o nome <abbr title="Variedade de café da ilha indonésia de Java" style="text-decoration: none; color: #000;">JAVA</abbr> estava na "moda"!
+                    Tudo começou pelo querer tornar o <abbr title="Linguagem de Marcação em Hipertexto" style="text-decoration: none; color: rgb(255, 255, 255);">HTML</abbr> mais dinâmico lá para os anos 95. Leva esse nome de JavaScript porque nos anos 95 o nome <abbr title="Variedade de café da ilha indonésia de Java" style="text-decoration: none; color: #ffffff;">JAVA</abbr> estava na "moda"!
                 </p>
             </div>
             <div id="cor1">
@@ -86,7 +121,7 @@
                 </h2>
                 <p id="p2">
                    Farei o uso de alguns recursos básicos do JavaScript nesta div. Respeitando as leis elementares na nomeação de variáveis.
-                   Contudo, É<STRONG> RÓGER</STRONG>!!
+                   Contudo, É<span style="font-weight: 700;"> RÓGER</span>!!
                 </p>
             </div>
         </section>
