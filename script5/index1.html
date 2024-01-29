@@ -14,7 +14,7 @@
         body{
             background-color: rgb(0, 0, 0);
             height: 100vh;
-            background-image: url('img/pexels-magda-ehlers-2660262.jpg');
+            background-image: url('img/pexels-reynaldo-brigworkz-brigantty-771883.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -23,15 +23,16 @@
 
         header{
             text-align: center;
-            padding: 40px;
+            padding-top: 10px;
             background-color: rgba(255, 255, 255, 0);
         }
 
 
 
         header h1{
-            color: rgb(248, 248, 0);
+            color: rgb(255, 255, 255);
             font-size: 40px;
+            margin-bottom: 20px;
         }
 
         
@@ -51,12 +52,15 @@
         }
 
         section{
-            margin: auto;
-            margin-top: 40px;
             width: 400px;
             background-color: rgba(255, 255, 255, 0.192);
             padding: 20px;
            border-radius: 10px;
+           position: absolute;
+           left: 50%;
+           top: 50%;
+           transform: translate(-50%, -50%);
+           box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
         }
 
         div{
@@ -64,12 +68,10 @@
         }
 
         div#cor1{
-            
             padding: 10px;
             border-radius: 5px;
         }
         div#cor2{
-            
             padding: 10px;
             border-radius:5px;
             margin-bottom: 13px;
@@ -82,11 +84,11 @@
             }
 
             h1#px{
-                color: aqua;
+                color:black ;
             }
 
             body{
-                background-image: url('img/pexels-pixabay-256150.jpg');
+                background-image: url('img/pexels-vasilis-karkalas-12341262.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-attachment: fixed;
@@ -105,14 +107,14 @@
 </head>
 <body>
     <main>
-        <header>
+        <header >
             <h1 id="px">A arte da NETSCAPE</h1>
         </header>
         <section>
             <div id="cor2">
                 <h2 style="text-align: center; color:rgb(0, 0, 0) ;font-size: 30px;" id="sol">O JavaScript</h2>
                 <p>
-                    Tudo começou pelo querer tornar o <abbr title="Linguagem de Marcação em Hipertexto" style="text-decoration: none; color: rgb(255, 255, 255);">HTML</abbr> mais dinâmico lá para os anos 95. Leva esse nome de JavaScript porque nos anos 95 o nome <abbr title="Variedade de café da ilha indonésia de Java" style="text-decoration: none; color: #ffffff;">JAVA</abbr> estava na "moda"!
+                    Tudo começou pelo querer tornar o <abbr title="Linguagem de Marcação em Hipertexto" style="text-decoration: none; color: rgb(0, 0, 0); cursor: grabbing;">HTML</abbr> mais dinâmico lá para os anos 95. Leva esse nome de JavaScript porque nos anos 95 o nome <abbr title="Variedade de café da ilha indonésia de Java" style="text-decoration: none; color: #000000; cursor: not-allowed;">JAVA</abbr> estava na "moda". Este foi criado por Brandon Each.
                 </p>
             </div>
             <div id="cor1">
@@ -127,22 +129,22 @@
         </section>
     </main>
     <script>
-        var p5 = document.getElementById('p2')
+        var p5 = document.getElementById('cor1')
         p5.addEventListener('click', Ele)
 
         
         function Ele(){
-            p5.innerText = 'Você fez oque muitos humanos fariam, perfeito seu comum!'
+            p5.innerText = 'Olá, cabra!'
         }
         
-        var p3 = document.getElementById('p2')
+        var p3 = document.getElementById('cor1')
 
         p3.addEventListener('mouseenter', entre)
         function entre(){
             p3.innerText = 'Aiii, você meteu todo cursor seu tarado!'
         }
 
-        var p4 = document.getElementById('p2')
+        var p4 = document.getElementById('cor1')
         p4.addEventListener('mouseout', tirou)
 
         function tirou(){
