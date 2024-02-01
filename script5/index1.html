@@ -38,7 +38,7 @@
         
 
         section h2#sol{
-            text-decoration: underline;
+            text-decoration: none;
             color: rgb(232, 233, 233);
         }
 
@@ -50,17 +50,18 @@
             color: rgb(0, 0, 0);
             text-indent: 20px;
         }
+        
 
-        section{
-            width: 400px;
+        .container{
+            margin: auto;
+            width:250px;
             background-color: rgba(255, 255, 255, 0.192);
             padding: 20px;
            border-radius: 10px;
-           position: absolute;
-           left: 50%;
-           top: 50%;
-           transform: translate(-50%, -50%);
-           box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+            text-align: justify;
+        overflow: hidden;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+            
         }
 
         div{
@@ -78,9 +79,9 @@
         }
 
         @media screen and (min-width:768px) {
-            section{
-                width: 768px;
-                height: 300px;
+            .container{
+                width: 766px;
+                height: 299px;
             }
 
             h1#px{
@@ -92,6 +93,7 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-attachment: fixed;
+                text-align: justify;
             }
             
             *{
@@ -110,11 +112,11 @@
         <header >
             <h1 id="px">A arte da NETSCAPE</h1>
         </header>
-        <section>
+        <section class="container">
             <div id="cor2">
                 <h2 style="text-align: center; color:rgb(0, 0, 0) ;font-size: 30px;" id="sol">O JavaScript</h2>
                 <p>
-                    Tudo começou pelo querer tornar o <abbr title="Linguagem de Marcação em Hipertexto" style="text-decoration: none; color: rgb(0, 0, 0); cursor: grabbing;">HTML</abbr> mais dinâmico lá para os anos 95. Leva esse nome de JavaScript porque nos anos 95 o nome <abbr title="Variedade de café da ilha indonésia de Java" style="text-decoration: none; color: #000000; cursor: not-allowed;">JAVA</abbr> estava na "moda". Este foi criado por Brandon Each.
+                    Tudo começou pelo querer tornar o <abbr title="Linguagem de Marcação em Hipertexto" style="text-decoration: none; color: rgb(0, 0, 0); cursor: grabbing;">HTML</abbr> mais dinâmico lá para os anos 95. Leva esse nome de JavaScript porque nos anos 95 o nome <abbr title="Variedade de café da ilha indonésia de Java" style="text-decoration: none; color: #000000; cursor: not-allowed;">JAVA</abbr> estava na "moda". Este foi criado por Brandon Each, em 1995 durante dez dias.
                 </p>
             </div>
             <div id="cor1">
