@@ -36,6 +36,12 @@ footer{
     font-weight: lighter;
 }
 
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
 @media screen and (max-width:600px) {
    body{
     text-align: justify;
@@ -45,10 +51,12 @@ footer{
    header h1{
     font-family: cursive;
     font-size: 2.2em;
+    text-shadow: 2px 2px 2px black;
    }
    
     section{
-        width: 270px;
+        width: 290px;
+        height: 240px;
     }
 
     div#foto{
@@ -56,6 +64,7 @@ footer{
     }
 
 section img{
-    width: 170px;
+    width: 190px;
+    height: 180px;
 }
 }
