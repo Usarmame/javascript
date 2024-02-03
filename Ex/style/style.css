@@ -55,9 +55,14 @@ footer a{
    }
    
     section{
+        
         font-size: 1.4em;
         width: 360px;
-        height: 290px;
+        height: 320px;
+    }
+
+    div{
+        text-align: center;
     }
 
     div#foto{
@@ -65,8 +70,8 @@ footer a{
     }
 
 section img{
-    width: 240px;
-    height: 230px;
+    width: 280px;
+    height: 260px;
 }
 footer p{
     font-size: 1.6em;
