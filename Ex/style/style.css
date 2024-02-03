@@ -33,14 +33,10 @@ footer{
     text-align: center;
     color: #fff;
     font-style: normal;
-    font-weight: lighter;
+    text-transform: capitalize;
 }
 
-footer a{
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
-}
+
 
 @media screen and (max-width:600px) {
    body{
@@ -73,7 +69,26 @@ section img{
     width: 280px;
     height: 260px;
 }
+
 footer p{
+    margin: auto;
+    margin-top: 10px;
+    color: black;
     font-size: 1.6em;
+    background-color: #fff;
+    width: 340px;
+    padding: 5px;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.836);
+    text-transform: capitalize;
+}
+
+footer p:hover{
+    background-color: black;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.836);
+    transition-duration: .4s;
+    transition-timing-function: linear;
+    text-transform:capitalize;
 }
 }
