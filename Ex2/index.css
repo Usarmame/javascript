@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body{
+    background-color: aqua;
+}
+
+header h1{
+    text-align: center;
+}
+
+div{
+    text-align: center;
+    background-color: white;
+    width: 520px;
+    margin: auto;
+    border-radius: 5px;
+}
