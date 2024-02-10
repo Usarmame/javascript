@@ -11,27 +11,34 @@
         <h1>
             Verificador de idade:
         </h1>
+    </header>
         <section>
-            <div>
+            <div id="all">
                 <p>
                     <label for="ano">
                         Ano de nascimento:
                     </label>
-                    <input type="number" name="anoo" id="ano">
+                    <input type="number" name="anoo" id="ano" min="0" max="5">
                 </p>
                 <p>Sexo:
-                    <input type="radio" name="sex" id="sex1" checked>
+                    <input type="radio" name="sex0" id="sex1" checked>
                     <label for="sex1">
                         Masculino
                     </label>
-                    <input type="radio" name="sex" id="sex2">
+                    <input type="radio" name="sex0" id="sex2">
                     <label for="sex2">
                         Feminino
                     </label>
                 </p>
+                <p>
+                    <input type="button" value="Verificar" onclick="verificar()">
+                    <button type="reset" id="ano">Limpar</button>
+                </p>
+                <div id="res">
+                    Preencha os dados acima para ver o resultado!
+                </div>
             </div>
         </section>
-    </header>
-    <script src="index.js"></script>
+    <script src="intera/index.js"></script>
 </body>
 </html>
