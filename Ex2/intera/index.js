@@ -23,24 +23,24 @@ function verificar(){
             }else if(idade>=5 && idade<7){
 
             }else if(idade>=7 && idade<10){
-
+                img.setAttribute('src','')
             }else if(idade>=10 && idade<=12){
 
             }else if(idade>=13 && idade<=15){
 
             }else if(idade>=16 && idade<=17){
-
+                img.setAttribute('src','')
             }else if(idade>=18 && idade<24){
-                img.setAttribute('src', '../img/miúdo_17.png')
+                img.setAttribute('src', 'miúdo_17.png')
                 color.style.background ='#8D55B0'
-            }else if(idade>=25 && idade<34){
-                    img.setAttribute('src', '../img/O_jovem_31.png')
+            }else if(idade>=24 && idade<=34){
+                    img.setAttribute('src','trinta.png')
                     color.style.background = '#AB5518'
                 }else if(idade>=35 && idade<50){
-                    img.setAttribute('src', '../img/O_cota.png')
+                    img.setAttribute('src', 'O_cota.png')
                     color.style.background='#B5B6B8'
                 }else if(idade>=60 && idade<90){
-                    img.setAttribute('src', '../img/velho.png')
+                    img.setAttribute('src', 'velho.png')
                     color.style.background=''
                 }else if(fsex[1].checked){
                     gênero = 'Mulher'
@@ -58,12 +58,15 @@ function verificar(){
                 }
                 res.style.textAlign ='center'
                 res.innerHTML= `Detectamos ${gênero} com ${idade} anos.`
-            }if(idade>116){
+            }if(idade>116, fsex[0].checked){
                 res.innerHTML= `Tu estás morto!!`
+            }
+            if(idade>116, fsex[1].checked){
+                res.innerHTML= `Tu estás morta!!`
             }
         res.appendChild(img)
     }
 }
 
 console.log('Olá.')
-console.log('I did not used media queries.')
+console.log('This was uploaded for recreation.')
